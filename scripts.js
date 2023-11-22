@@ -152,12 +152,11 @@ function operate(leftOp, rightOp, operation) {
             break;
         default:
             throw new Error(`Invalid operation. ${operation} is not a supported function.`);
-    }    
+    }        
     
-    // Store current result
-    leftOperand = String(result);
-    clear();    
+    clear();            
     updateDisplay(result);    
+    leftOperand = String(result);
 }
 
 function canOperate() {
